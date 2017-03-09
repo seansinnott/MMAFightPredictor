@@ -1,0 +1,1 @@
+This folder contain the file Link_To_Video_Walkthrough, which contains a clickable link to our video walkthrough, which is on youtube.
