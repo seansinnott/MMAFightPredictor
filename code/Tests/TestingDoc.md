@@ -1,9 +1,9 @@
-#Genetic Algorithm Testing#
+# Genetic Algorithm Testing #
 To test the code which we wrote for the Genetic Algorithms, we decided to use one of the twenty-one algorithms as a basis for the tests. The reason for this was that the algorithm which we chose to use, the nineteenth genetic algorithm, contained every method that any of the other twenty-one algorithms made use of. There was nothing new in any of the other genetic algorithms, they just used a different combination of methods and had different sized genotypes. This meant that after testing everything we could in the nineteenth algorithm, we had essentially tested every genetic algorithm.<br> 
 
 We made use of Eclipse and JUnit in order to write test code for this genetic algorithm. Basically, we took one class at a time and wrote test methods which ensured that each method contained in that class functioned as expected and produced correct outputs. 
 
-###Unit Testing###
+### Unit Testing ###
 The first class that we unit tested was the BaseClass, which contained all the methods for subtracting and adding amounts from the fighter’s total based on data it received from text files. These unit tests were relatively straightforward. We made a genotype and then made variables for each piece of data that could be received. Then, using a BaseClass object, we would assert that the total returned by each method was the correct total. Below is a screenshot of the test we ran on the calcReach method, which passed.<br>
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/UnitTestingBaseClassScreenshot.JPG)
@@ -25,7 +25,7 @@ The final class that could be simply unit tested was the CalculateFitness class,
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/UnitTestingCalculateFitnessScreenshot.JPG)
 
-###Integration Testing###
+### Integration Testing ###
 For the following classes, the lines between unit test and integration test became slightly blurred, because these classes made use of other classes in their methods, so we are going to describe them under the heading of integration tests.<br>
 The Chromosome class contained methods to manipulate the genes of Individuals in a Population, using evolutionary methods such as crossover, mutation and natural selection. We tested the performCrossover method by calling it on an empty Individual object and then checking that the object was not empty after the method call. The naturalSelection method was tested by creating a Population object and then calling the naturalSelection method with the Population object passed as a parameter and placing the result into a previously empty Individual object. To see if it worked, we ensured that the Individual object was no longer empty. The performEvolution method was tested in almost the exact same manner as the naturalSelection method, except it returned a Population object instead of an Individual object. The most awkward method to test was the performMutation method, which has a probability of 0.005 of changing a gene of an Individual. To test that this worked, we created two Individuals with identical genotypes. We then tried to mutate the second individual’s genotype by calling the performMutation method. We looped until it changed and then ensured that it had worked by comparing the two genotypes and asserting that they were not equal.
 ![](http://www.student.computing.dcu.ie/~nearyc2/IntegrationTestingChromosomeScreenshot.JPG)
@@ -33,21 +33,21 @@ The Chromosome class contained methods to manipulate the genes of Individuals in
 The final class to be tested was the Population class, which is responsible for building and manipulating populations of Individuals. We tested getting and setting of Individual objects in this class in the same manner as before. We also tested the constructors because they took a Boolean as a parameter, which signalled whether or not all the Individuals in the Population should be given random genes or not, because this is needed for the first generation of a genetic algorithm. To test this we called the constructor with false as a parameter and then ensured that attempting to access an individual in the Population threw an exception. Then when we called it with true as a parameter we could access an individual in the Population with no exception being thrown. The most awkward method to test in this class was the getFittestInPopulation method. To test that this worked as expected, we created a population of individuals, all of whom had genes with a value of zero (because this gives a horrible fitness). We then changed one Individual in the population to have genes which we know to have a very high fitness. We then called the method on the population and ensured that it returned the individual with the best genotype as expected. This test can be seen below.
 ![](http://www.student.computing.dcu.ie/~nearyc2/IntegrationTestingPopulationScreenshot.JPG)
 
-###System Testing###
+### System Testing ###
 The system test for this genetic algorithm basically consisted of us running it over and over again and seeing that it did indeed evolve and improve in its ability to predict the fight. We wrote a main method which basically created a random population of individuals and then, using mutation, crossover and natural selection, this population was replaced with a new and improved population, which formed the next generation. This cycle continued until the genetic algorithm stopped evolving and the best solution had been found. A screenshot of this process in a terminal can be seen below.
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/SystemTestGeneticAlgorithmScreenshot.JPG)
 
-###Results###
+### Results ###
 Using a tool for Eclipse known as EclEmma, we were able to measure the coverage of the genetic algorithm after performing all of the tests that we had written. We achieved a total coverage score of 92.5%. We would have been closer to 100% if we had been able to write some JUnit tests for the main method of the genetic algorithm, however, this is very awkward, and rather unnecessary. The main method consisted purely of methods that we have fully tested as well as some print statements, and the fact that it evolves when run and becomes better at predicting fights as it runs, is proof enough that the main method is doing everything it should be. A screenshot showing our code coverage results can be seen below.
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/GeneticAlgorithmCodeCoverageScreenshot.JPG)
 
-#Android Application Testing#
+# Android Application Testing #
 To test the code we wrote for our Android Application, we used unit tests and instrumentation tests. Unit tests, in terms of Android applications, are tests that can be run locally, without needing a device or emulator. Whereas, instrumentation tests are tests which require a device or emulator in order to be performed. These tests mainly focus on the User Interface and actual functionality of the Application itself. Instrumentation tests can be used to describe both integration tests as well as unit tests when it comes to Android Applications, which makes some of these tests quite difficult to categorise. So for the purpose of this write-up, the tests described under the heading of unit tests, solely consist of unit tests, however, the tests described under the heading of instrumentation tests can consist of both unit tests and integration tests.<br>
 Unit tests were carried out using JUnit and instrumentation tests were carried out using a combination of Espresso and JUnit.
 
-###Unit Testing###
+### Unit Testing ###
 It was only possible to properly unit test three of the classes in the Application. The first of which was the GlobalClass, which we used to store variables that needed to be passed between different screens on the application using getters and setters. The tests for these are rather self-explanatory, basically just test the getter by retrieving a value and asserting that it is the intended value, and test the setter by changing the value using the setter and then asserting that the value has changed. The only other method in this class was resetAllValues, which we used to reset values that may have been manipulated during a previous run of the application. This essentially tidied up everything before a new run of the application began. We tested this by manually changing all these values, then calling the method, and ensuring that the values had indeed reset. Some of these tests can be seen below.
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/AppUnitTestingGlobalClassScreenshot.JPG)
@@ -56,7 +56,7 @@ The next two classes that we did unit tests on were the ResultScreen classes tha
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/AppUnitTestingCalculateMethodScreenshot.JPG)
 
-###Instrumentation Testing###
+### Instrumentation Testing ###
 The first class which required instrumentation testing was the DatabaseHelper class, because in order to carry out tests on the database, the database first needed to be installed on a device or an emulator. Before each test, we created a database on the testing device, and after each test we would close the database for safety. Since our database was already created, all the methods in this class are basically getters. So to test them, we would query the database at a known location and ensure that the value it retrieved was the correct value. We also had two methods to build the lists for the drop-down menu of fighter names. The first of these lists was built based on the weight division selected by the user, and the second list consisted of the same names excluding the name that the user already selected. So we tested that these methods functioned appropriately by choosing a fighter from the list and then ensuring that that fighter did not appear in the second list. Some of these methods can be seen below.
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/AppInstrumentationTestingGlobalClassScreenshot.JPG)
@@ -73,7 +73,7 @@ The rest of the classes were mainly tested for functionality. So we used Espress
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/AppInstrumentationTestingAllActivitiesScreenshot.JPG)
 
-###System Testing###
+### System Testing ###
 We wrote 3 separate system tests using Espresso for our Android Application. These system tests simulate a user going from the home screen all the way through to receiving a prediction. Each system test simulated the user choosing a different path through the app, by either creating their own algorithm, using our algorithm with only data, or using our algorithm as well as providing their own opinion. During these system tests we would ensure that the user was being shown the correct information at all times, and that the correct result was provided to the user on the final result screen based on the information that they had entered. A screenshot of one of these tests is provided below. The other two system tests are very similar to this one shown here.
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/AppSystemTestScreenshot.JPG)
