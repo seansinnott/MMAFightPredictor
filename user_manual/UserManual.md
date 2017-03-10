@@ -1,3 +1,20 @@
+# Contents Page #
+1. Welcome Screens <br>
+  1.2 Home Screen 
+2. Calculate Mode <br>
+  2.1 Choose Fighters <br>
+  2.2 User Opinion Option<br>
+  2.3 Give Your Opinion<br>
+  2.4 Results Screen<br>
+3. Create Algorithm Mode <br>
+  3.1 Choose Fighters <br>
+  3.2 Create Algortihm <br>
+  3.3 Give Opinion <br>
+  3.4 Results Screen <br>
+4. Select A Different Language
+
+
+
 # User Manual - MMA Fight Predictor #
 Our Project, the MMA Fight Predictor, is an Android Application for which the desired result is to correctly predict the outcome of a Mixed Martial Arts bout between two fighters. This is achieved by the user entering the required information throughout the process, in addition to the app fetching information from its built-in database. This User Manual will breakdown the step-by-step process of how to use the application, including both of its prediction modes, which will be explained thoroughly in this guide. 
 
@@ -65,7 +82,7 @@ The user can navigate back to the home screen by pressing the “Finish” butto
 
 ![](http://www.student.computing.dcu.ie/~nearyc2/Result.PNG)
 
-## Create Algorithm Mode ##
+## 3. Create Algorithm Mode ##
 
 ### 3.1 Choose Fighters ###
 
@@ -108,6 +125,6 @@ See Section 2.3.
 
 See Section 2.4.
 
-## Select A Different Language ##
+## 4. Select A Different Language ##
 
-The MMA Fight Predictor comes with four pre-installed languages: English, German, Portuguese, and French. The application recognises which language to use by checking the default language on the users’ device. If the user wishes to change the language, they can do so through Settings > Language & Input.
+The MMA Fight Predictor comes with four pre-installed languages: English, German, and French. The application recognises which language to use by checking the default language on the users’ device. If the user wishes to change the language, they can do so through Settings > Language & Input.
