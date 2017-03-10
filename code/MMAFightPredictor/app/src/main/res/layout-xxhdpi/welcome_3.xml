@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAccent"
+    android:layout_gravity="center"
+    android:id="@+id/welcome3"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:gravity="center"
+        android:id="@+id/welc3title"
+        android:layout_gravity="top|center"
+        android:text="@string/calc"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="60sp"/>
+
+    <ImageView
+        android:layout_width="230sp"
+        android:layout_height="230sp"
+        android:id="@+id/welc3img"
+        android:contentDescription="@string/calc"
+        android:src="@drawable/calculatelogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120sp"/>
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/welc3txt"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="370sp"
+        android:text="@string/welcome_screen_three_msg"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/Grey" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button"
+        android:id="@+id/welc3back"
+        android:textSize="15sp"
+        android:onClick="onClickBackWelcomeThree"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|start"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/got_it_button"
+        android:id="@+id/welc3next"
+        android:onClick="onClickNextWelcomeThree"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/welc3dots"
+        android:id="@+id/welc3dots"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="25sp" />
+
+</FrameLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/choosecalctxt"
+        android:text="@string/choose_fighters_msg"
+        android:textSize="22sp"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="20sp"/>
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_marginTop="150sp"
+        android:id="@+id/weight_division_spinner"
+        android:clickable="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10sp"
+        android:id="@+id/fighter_a_spinner" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="130sp"
+        android:id="@+id/fighter_b_spinner" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:text="@string/go_button"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_style"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20sp"
+        android:onClick="onClickChooseFightersNext" />
+</FrameLayout>

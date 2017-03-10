@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b71c1c</color>
+    <color name="colorPrimaryDark">#b71c1c</color>
+    <color name="colorAccent">#FFFFFF</color>
+    <color name="Grey">#616161</color>
+
+    <color name="bgscreen1">#b71c1c</color>
+    <color name="bgscreen2">#ffffff</color>
+
+    <color name="inactivedot">#616161</color>
+    <color name="activedotsc1">#ffffff</color>
+    <color name="activedotsc2">#b71c1c</color>
+</resources>

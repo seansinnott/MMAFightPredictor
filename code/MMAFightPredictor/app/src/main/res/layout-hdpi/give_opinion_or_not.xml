@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@color/colorAccent" >
+
+<TextView
+    android:layout_width="140sp"
+    android:layout_marginStart="0sp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="105sp"
+    android:layout_gravity="center|start"
+    android:gravity="center"
+    android:clickable="true"
+    android:text="@string/yes_give_opinion"
+    android:textSize="25sp"
+    android:textColor="@color/Grey"
+    android:textStyle="bold"
+    android:layout_marginLeft="0sp" />
+
+<TextView
+    android:layout_width="140sp"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="0sp"
+    android:layout_marginTop="105sp"
+    android:layout_gravity="center|end"
+    android:gravity="center"
+    android:clickable="true"
+    android:text="@string/stats_only"
+    android:textSize="25sp"
+    android:textColor="@color/Grey"
+    android:textStyle="bold"
+    android:layout_marginRight="0sp" />
+
+<ImageButton
+    android:layout_width="130sp"
+    android:layout_height="130sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginEnd="5sp"
+    android:id="@+id/calculate"
+    android:onClick="onClickStatsOnly"
+    android:contentDescription="@string/calc"
+    android:background="@drawable/opinionlogo"
+    android:layout_gravity="center_vertical|end"
+    android:clickable="true"
+    android:layout_marginRight="5sp" />
+
+<ImageButton
+    android:layout_width="130sp"
+    android:layout_height="130sp"
+    android:layout_marginTop="5sp"
+    android:layout_marginStart="5sp"
+    android:id="@+id/create_algo"
+    android:contentDescription="@string/create_algo"
+    android:onClick="onClickOpinion"
+    android:background="@drawable/factslogo"
+    android:layout_gravity="center_vertical"
+    android:clickable="true"
+    android:layout_marginLeft="5sp" />
+
+    <TextView
+        android:id="@+id/titlepic"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/give_opinion_msg"
+        android:textSize="17sp"
+        android:textColor="@color/Grey" />
+
+
+</FrameLayout>

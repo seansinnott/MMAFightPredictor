@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAccent"
+    android:layout_gravity="center"
+    android:id="@+id/welcome1"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+        android:src="@drawable/title"
+        android:id="@+id/welcome1title"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="125sp" />
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="210sp"
+        android:id="@+id/welcome1txt"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="170sp"
+        android:text="@string/welcome_screen_one_msg"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="@color/Grey" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/skip_button"
+        android:id="@+id/welc1skip"
+        android:textSize="15sp"
+        android:onClick="onClickSkipWelcome"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|start"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:id="@+id/welc1next"
+        android:textSize="15sp"
+        android:onClick="onClickNextWelcomeOne"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/welcome1dots"
+        android:id="@+id/welc1dots"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="25sp" />
+
+    <CheckBox
+        android:id="@+id/checkbutt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textSize="12sp"
+        android:layout_marginBottom="80sp"
+        android:layout_marginLeft="115sp"
+        android:layout_marginStart="115sp"
+        android:text="@string/dont_show_again"
+        android:buttonTint="@color/colorPrimary" />
+
+</FrameLayout>

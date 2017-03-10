@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MMA Fight Predictor</string>
+
+    <string name="welcome_screen_one_msg">Bienvenue à MMA Fight Predictor! Il y a deux façons pour l\'utiliser. Allons y!</string>
+    <string name="skip_button">SAUTER</string>
+    <string name="next_button">PROCHAIN</string>
+    <string name="dont_show_again">NE PLUS AFFICHER CELA</string>
+
+    <string name="welcome_screen_two_msg">Cette façon t\'authorise à créer ton propre algorythme en choississant l\'importance des divers attributs des combatants</string>
+    <string name="back_button">RETOUR</string>
+
+    <string name="welcome_screen_three_msg">Cette façon t\'authorise à utiliser ton algorythme spécifique formulé pour prévoir le résultat du combat</string>
+    <string name="got_it_button">Tu l\'as</string>
+
+    <string name="action_settings">Réglage</string>
+    <string name="contact_button">Contact</string>
+    <string name="help_button">Aide</string>
+    <string name="create_algo">Créer l\'algorythme</string>
+    <string name="calc">Calculer</string>
+
+    <string name="contact_message">Merci d\'avoir utiliser le MMA Fight Predictor!  \n \n Avez-vous des questions ou un feedback? \n \n N\'hésitez pas à nous contacter via notre mail ci-dessous</string>
+    <string name="email">sinnocure@gmail.com</string>
+
+    <string name="choose_fighters_msg">Choisissez le poids que vous désirez er 2 combattent avec vous vous prédira</string>
+    <string name="go_button">ALLEZ Y</string>
+
+    <string name="weight_division">Choisissez la division du poids</string>
+    <string name="first_fighter">Choisissez du premier combattant</string>
+    <string name="second_fighter">Choisissez le deuxième combattant</string>
+    <string name="choose_fighters_toast">S\'il vous plait choisissez une division et deux combattants</string>
+
+    <string name="create_algo_msg">Choisissez un niveau d\'importance de chacun des attributs: </string>
+    <string name="reach_importance">Importance de l\'aquisition: </string>
+    <string name="height_importance">Importance de la hauteur: </string>
+    <string name="weight_importance">Importance du poids: </string>
+    <string name="age_importance">Importance de l\'âge: </string>
+    <string name="striking_importance">Importance de la frappe: </string>
+    <string name="bjj_importance">Importance du Jiu-Jitsu: </string>
+    <string name="wrestling_importance">Importance du wrestling: </string>
+    <string name="current_form_importance">Importance de la forme courrante: </string>
+
+    <string name="give_opinion_msg">Voulez vous donner votre opinion en choisissant les combattants ou seulement des statistiques?</string>
+    <string name="yes_give_opinion">Donner votre opinion</string>
+    <string name="stats_only">Statistique seulement</string>
+
+    <string name="which_fighter_better_msg">Le combat est plus compétant que n\'importe quelle niveau?</string>
+    <string name="striking">Frappe</string>
+    <string name="bjj">Jiu-Jitsu</string>
+    <string name="wrestling">Wrestling</string>
+    <string name="predict">PRÉVOIR</string>
+    <string name="neutral">Neutre</string>
+    <string name="sig_striking_advantage">Un avantage significatif de frappe:</string>
+    <string name="sig_bjj_advantage">Un avantage significatif du jiu jitsu:</string>
+    <string name="sig_wrestling_advantage">Un avantage significatif du wrestling:</string>
+    <string name="slight_striking_advantage">Un léger avantage de la frappe:</string>
+    <string name="slight_bjj_advantage">Un léger avantage du Jiu-Jitsu:</string>
+    <string name="slight_wrestling_advantage">Un léger avantage du wrestling:</string>
+
+    <string name="winner_msg">LE GAGNANT EST</string>
+    <string name="draw_msg">CE COMBAT</string>
+    <string name="draw">VA ÊTRE FERMÉ</string>
+    <string name="finish_button">FINI</string>
+
+</resources>

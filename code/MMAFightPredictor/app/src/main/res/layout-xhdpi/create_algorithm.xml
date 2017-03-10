@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_beatalgo" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/weighttxt"
+            android:text="@string/create_algo_msg"
+            android:textSize="20sp"
+            android:layout_gravity="center|top"
+            android:gravity="center"
+            android:textColor="@color/Grey"
+            android:layout_marginTop="30sp"/>
+
+
+        <TextView
+            android:text="@string/reach_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/reachtext"
+            android:layout_gravity="top"
+            android:layout_marginTop="140sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/reachbar"
+            android:max="10"
+            android:layout_marginTop="170sp" />
+
+
+        <TextView
+            android:text="@string/height_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/heightText"
+            android:layout_gravity="top"
+            android:layout_marginTop="230sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/heightBar"
+            android:max="10"
+            android:layout_marginTop="260sp" />
+
+
+        <TextView
+            android:text="@string/weight_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/weightText"
+            android:layout_gravity="top"
+            android:layout_marginTop="320sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/weightBar"
+            android:max="10"
+            android:layout_marginTop="350sp" />
+
+
+        <TextView
+            android:text="@string/age_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/ageText"
+            android:layout_gravity="top"
+            android:layout_marginTop="410sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/ageBar"
+            android:max="10"
+            android:layout_marginTop="440sp" />
+
+
+        <TextView
+            android:text="@string/striking_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/strikeText"
+            android:layout_gravity="top"
+            android:layout_marginTop="500sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/strikeBar"
+            android:max="10"
+            android:layout_marginTop="530sp" />
+
+
+        <TextView
+            android:text="@string/bjj_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/BJJText"
+            android:layout_gravity="top"
+            android:layout_marginTop="590sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/BJJBar"
+            android:max="10"
+            android:layout_marginTop="620sp" />
+
+
+        <TextView
+            android:text="@string/wrestling_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/wrestlingText"
+            android:layout_gravity="top"
+            android:layout_marginTop="680sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/wrestlingBar"
+            android:max="10"
+            android:layout_marginTop="710sp" />
+
+        <TextView
+            android:text="@string/current_form_importance"
+            android:gravity="center_vertical"
+            android:foregroundGravity="left"
+            android:textSize="20sp"
+            android:layout_width="350sp"
+            android:layout_height="30sp"
+            android:id="@+id/streakText"
+            android:layout_gravity="top"
+            android:layout_marginTop="770sp"
+            android:layout_marginStart="30sp"
+            android:layout_marginLeft="30sp" />
+
+        <SeekBar
+            android:layout_width="350sp"
+            android:layout_height="50sp"
+            android:layout_gravity="top|center"
+            android:id="@+id/streakBar"
+            android:max="10"
+            android:layout_marginTop="800sp" />
+
+        <Button
+            android:id="@+id/gobuttonweight"
+            android:text="@string/go_button"
+            android:textColor="@color/colorAccent"
+            android:textSize="25sp"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_style"
+            android:layout_gravity="bottom|center"
+            android:layout_marginTop="870sp"
+            android:layout_marginBottom="20sp"
+            android:onClick="OnClickCreateAlgorithmGoButton" />
+
+    </FrameLayout>
+
+
+</ScrollView>

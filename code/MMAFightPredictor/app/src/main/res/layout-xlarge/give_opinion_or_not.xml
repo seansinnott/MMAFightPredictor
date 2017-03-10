@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlepic"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80sp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/give_opinion_msg"
+            android:textSize="40sp"
+            android:textColor="@color/Grey"/>
+
+        <LinearLayout
+            android:id="@+id/makealgolay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlepic"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="170dp">
+
+
+            <ImageButton
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="30sp"
+                android:id="@+id/statsonly"
+                android:onClick="onClickStatsOnly"
+                android:background="@drawable/factslogo"
+                android:contentDescription="@string/stats_only"
+                android:layout_below="@id/titlepic"
+                android:clickable="true"
+                android:adjustViewBounds="false" />
+
+
+            <ImageButton
+                android:layout_width="300sp"
+                android:layout_height="300sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginStart="20sp"
+                android:id="@+id/opinionandstats"
+                android:contentDescription="@string/yes_give_opinion"
+                android:onClick="onClickOpinion"
+                android:background="@drawable/opinionlogo"
+                android:clickable="true" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/makealgolay">
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/stats_only"
+                android:textSize="45sp"
+                android:textColor="@color/Grey"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/yes_give_opinion"
+                android:textSize="45sp"
+                android:textColor="@color/Grey"
+                android:textStyle="bold"
+                android:layout_marginLeft="140dp"
+                android:layout_marginStart="140dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

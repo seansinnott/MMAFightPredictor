@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <TextView
+        android:layout_width="290sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:layout_gravity="top|center"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/give_opinion_msg"
+        android:textSize="22sp"
+        android:textColor="@color/Grey" />
+
+    <ImageButton
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="20sp"
+        android:id="@+id/statsonly"
+        android:onClick="onClickStatsOnly"
+        android:background="@drawable/factslogo"
+        android:contentDescription="@string/stats_only"
+        android:layout_gravity="center_vertical|end"
+        android:clickable="true"
+        android:layout_marginRight="20sp" />
+
+    <ImageButton
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="20sp"
+        android:id="@+id/opinionandstats"
+        android:contentDescription="@string/yes_give_opinion"
+        android:onClick="onClickOpinion"
+        android:background="@drawable/opinionlogo"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:layout_marginLeft="20sp" />
+
+
+    <TextView
+        android:layout_width="170sp"
+        android:layout_marginStart="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105sp"
+        android:layout_gravity="bottom|start"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/yes_give_opinion"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_marginLeft="20sp">
+    </TextView>
+
+    <TextView
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="105sp"
+        android:layout_gravity="bottom|end"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/stats_only"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_marginRight="20sp" />
+</FrameLayout>

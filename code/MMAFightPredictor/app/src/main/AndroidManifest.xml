@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sinnocure.sean.mmafightpredictor">
+
+    <application
+        android:allowBackup="true"
+        android:name="com.sinnocure.sean.mmafightpredictor.GlobalClass"
+        android:icon="@mipmap/splash_img"
+        android:label="MMA Fight Predictor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.Welcome1"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="" />
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.Welcome2"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.Welcome3"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.MainActivity"
+            android:label=""/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.Contact"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.MainActivity"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.ChooseFighters"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.MainActivity"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.CreateAlgorithm"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.ChooseFighters"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.UserOpinion"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.CreateAlgorithm"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.ResultLoadScreen"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label=""/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.UserAlgorithmResult"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.UserOpinion"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.GiveOpinionOrNot"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.ChooseFighters"/>
+
+        <activity android:name="com.sinnocure.sean.mmafightpredictor.OurAlgorithmResult"
+            android:label=""
+            android:parentActivityName="com.sinnocure.sean.mmafightpredictor.GiveOpinionOrNot"/>
+
+    </application>
+
+</manifest>

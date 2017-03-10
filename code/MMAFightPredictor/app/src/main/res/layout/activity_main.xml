@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/colorAccent" >
+
+    <TextView
+        android:layout_width="170sp"
+        android:layout_marginStart="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="105sp"
+        android:layout_gravity="bottom|start"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/create_algo"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_marginLeft="20sp" />
+
+    <TextView
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:layout_marginBottom="130sp"
+        android:layout_gravity="bottom|end"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="@string/calc"
+        android:textSize="30sp"
+        android:textColor="@color/Grey"
+        android:textStyle="bold"
+        android:layout_marginRight="20sp" />
+
+    <ImageButton
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginEnd="20sp"
+        android:id="@+id/calculate"
+        android:onClick="onClickUseOurAlgorithm"
+        android:contentDescription="@string/calc"
+        android:background="@drawable/calculatelogo"
+        android:layout_gravity="center_vertical|end"
+        android:clickable="true"
+        android:layout_marginRight="20sp" />
+
+    <ImageButton
+        android:layout_width="170sp"
+        android:layout_height="170sp"
+        android:layout_marginTop="25sp"
+        android:layout_marginStart="20sp"
+        android:id="@+id/create_algo"
+        android:contentDescription="@string/create_algo"
+        android:onClick="onClickCreateAlgorithm"
+        android:background="@drawable/makealgo"
+        android:layout_gravity="center_vertical"
+        android:clickable="true"
+        android:layout_marginLeft="20sp" />
+
+    <ImageView
+        android:layout_width="350sp"
+        android:layout_height="100sp"
+        android:layout_marginTop="90sp"
+        android:id="@+id/titlepic"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/title"/>
+
+
+</FrameLayout>

@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">MMA Fight Predictor</string>
+
+    <string name="welcome_screen_one_msg">Welcome to MMA Fight Predictor! There are two main modes to use. Let\'s get started!</string>
+    <string name="skip_button">SKIP</string>
+    <string name="next_button">NEXT</string>
+    <string name="dont_show_again">DO NOT SHOW THIS AGAIN</string>
+
+    <string name="welcome_screen_two_msg">This mode allows you to create your own algorithm by choosing the importance of various fighter attributes</string>
+    <string name="back_button">BACK</string>
+
+    <string name="welcome_screen_three_msg">This mode allows you to use our specially formulated algorithm to predict the outcome of a fight</string>
+    <string name="got_it_button">GOT IT</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="contact_button">Contact</string>
+    <string name="help_button">Help</string>
+    <string name="create_algo">Create Algorithm</string>
+    <string name="calc">Calculate</string>
+
+    <string name="contact_message">Thank you for using MMA Fight Predictor! \n \n Have any questions or feedback? \n \n Feel free to contact us via the email below</string>
+    <string name="email">sinnocure@gmail.com</string>
+
+    <string name="choose_fighters_msg">Choose your desired weight class and the two fighters whose fight you wish to predict</string>
+    <string name="go_button">GO</string>
+
+    <string name="weight_division">Choose Weight Division</string>
+    <string name="first_fighter">Choose First Fighter</string>
+    <string name="second_fighter">Choose Second Fighter</string>
+    <string name="choose_fighters_toast">Please Choose a Division and Two Fighters</string>
+
+    <string name="create_algo_msg">Choose the level of importance of each of the following attributes</string>
+    <string name="reach_importance">Importance of Reach: </string>
+    <string name="height_importance">Importance of Height: </string>
+    <string name="weight_importance">Importance of Weight: </string>
+    <string name="age_importance">Importance of Age: </string>
+    <string name="striking_importance">Importance of Striking: </string>
+    <string name="bjj_importance">Importance of Jiu-Jitsu: </string>
+    <string name="wrestling_importance">Importance of Wrestling: </string>
+    <string name="current_form_importance">Importance of Current Form: </string>
+
+    <string name="give_opinion_msg">Would you like to give your personal opinion on chosen fighters or just use data and statistics</string>
+    <string name="yes_give_opinion">Give Your Opinion</string>
+    <string name="stats_only">Statistics Only</string>
+
+    <string name="which_fighter_better_msg">Is either fighter more skilled in any of these areas</string>
+    <string name="striking">Striking</string>
+    <string name="bjj">Jiu-Jitsu</string>
+    <string name="wrestling">Wrestling</string>
+    <string name="predict">PREDICT</string>
+    <string name="neutral">Neutral</string>
+    <string name="sig_striking_advantage">Significant Striking Advantage:</string>
+    <string name="sig_bjj_advantage">Significant Jiu-Jitsu Advantage:</string>
+    <string name="sig_wrestling_advantage">Significant Wrestling Advantage:</string>
+    <string name="slight_striking_advantage">Slight Striking Advantage:</string>
+    <string name="slight_bjj_advantage">Slight Jiu-Jitsu Advantage:</string>
+    <string name="slight_wrestling_advantage">Slight Wrestling Advantage:</string>
+
+    <string name="winner_msg">THE WINNER IS</string>
+    <string name="draw_msg">THIS FIGHT IS</string>
+    <string name="draw">TOO CLOSE TO CALL</string>
+    <string name="finish_button">FINISH</string>
+
+
+</resources>

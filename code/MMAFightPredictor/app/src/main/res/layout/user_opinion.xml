@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/weighttxt"
+        android:text="@string/which_fighter_better_msg"
+        android:textSize="22sp"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/nameB"
+        android:textSize="20sp"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="130sp"
+        android:gravity="end"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginRight="20sp" />
+
+    <TextView
+        android:id="@+id/strikingtitle"
+        android:textSize="22sp"
+        android:text="@string/striking"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:layout_marginTop="190sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/strikestatus"
+        android:textSize="15sp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="260sp"/>
+
+    <SeekBar
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="top|center"
+        android:id="@+id/opinionstrike"
+        android:max="4"
+        android:layout_marginTop="220sp" />
+
+    <TextView
+        android:id="@+id/bjjtitle"
+        android:textSize="22sp"
+        android:text="@string/bjj"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:layout_marginTop="290sp"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bjjstatus"
+        android:textSize="15sp"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="360sp" />
+
+    <SeekBar
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="top|center"
+        android:id="@+id/opinionbjj"
+        android:max="4"
+        android:layout_marginTop="320sp" />
+
+
+    <TextView
+        android:id="@+id/wrestlingtitle"
+        android:textSize="22sp"
+        android:text="@string/wrestling"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:layout_marginTop="390sp"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wrestlingstatus"
+        android:textSize="15sp"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:layout_marginTop="460sp"/>
+
+    <SeekBar
+        android:layout_width="300sp"
+        android:layout_height="50sp"
+        android:layout_gravity="top|center"
+        android:id="@+id/opinionwrestling"
+        android:max="4"
+        android:layout_marginTop="420sp" />
+
+    <Button
+        android:id="@+id/gobuttonopinion"
+        android:text="@string/predict"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_style"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="515sp"
+        android:onClick="onClickUserOpinionNext"
+
+        />
+
+    <TextView
+        android:id="@+id/nameA"
+        android:textSize="20sp"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="130sp"
+        android:gravity="start"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="20sp" />
+</FrameLayout>

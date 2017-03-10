@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMA Fight Predictor</string>
+
+    <string name="welcome_screen_one_msg">o	Wilkommen im MMA Fight Predictor! o	Es gibt zwei Hauptoperationsmodi. Es kann losgehen!</string>
+    <string name="skip_button">ÜBERSPRINGEN</string>
+    <string name="next_button">WEITER</string>
+    <string name="dont_show_again">DAS NICHT MEHR ANZEIGEN</string>
+
+    <string name="welcome_screen_two_msg">Sie können mit dieser Mode, ihrer Algorithmus erzeugen. Sie müssen die Wichtigkeit der verschiedene Eigenschaften der Kämpfer auswählen.</string>
+    <string name="back_button">ZURÜCK</string>
+
+    <string name="welcome_screen_three_msg">Sie können mit dieser Mode und unser Algorithmus das Ergebnis einer Kampf voraussagen.</string>
+    <string name="got_it_button">ICH HABS</string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="contact_button">Kontakt</string>
+    <string name="help_button">HILFE</string>
+    <string name="create_algo">Der Algorithmus Erzeugen</string>
+    <string name="calc">Errechnen</string>
+
+    <string name="contact_message">Vielen Dank, dass Sie unser MMA Fight Predictor nutzen! \n \n Sollten Sie Fragen oder Anregungen für uns haben? \n \n Senden Sie uns bitte eine E-Mail. (siehe unten)</string>
+    <string name="email">sinnocure@gmail.com</string>
+
+    <string name="choose_fighters_msg">Ihrer Gewichtsklasse und zwei Kämpfer auswählen</string>
+    <string name="go_button">LOS</string>
+
+    <string name="weight_division">Die Gewichtsklasse auswählen</string>
+    <string name="first_fighter">Der Erste Kämpfer auswählen</string>
+    <string name="second_fighter">Der Zweite Kämpfer auswählen</string>
+    <string name="choose_fighters_toast">Die Klasse und die zwei Kämpfer bitte auswählen</string>
+
+    <string name="create_algo_msg">Die Wichtigkeit der folgenden Eigenschaften der Kämpfer auswählen:</string>
+    <string name="reach_importance">Die Wichtigkeit der Reichweite:</string>
+    <string name="height_importance">Die Wichtigkeit der Größe:</string>
+    <string name="weight_importance">Die Wichtigkeit des Gewicht:</string>
+    <string name="age_importance">Die Wichtigkeit des Alter:</string>
+    <string name="striking_importance">Die Wichtigkeit der Schläge:</string>
+    <string name="bjj_importance">Die Wichtigkeit des Jiu-Jitsu:</string>
+    <string name="wrestling_importance">Die Wichtigkeit des Ringen:</string>
+    <string name="current_form_importance">Die Wichtigkeit der derzeitige Form</string>
+
+    <string name="give_opinion_msg">Möchten Sie entweder ihr eigenener Meinung äußern oder die Daten und die Statistiken auswählen</string>
+    <string name="yes_give_opinion">Deine Meinung äußern</string>
+    <string name="stats_only">Nur die Statistiken</string>
+
+    <string name="which_fighter_better_msg">Haben einer von beiden Kämpfer mehre Fähigkeiten in der folgenden Bereichen</string>
+    <string name="striking">Die Schläge</string>
+    <string name="bjj">Das Jiu-Jitsu</string>
+    <string name="wrestling">Der Ringen</string>
+    <string name="predict">VORAUSSAGEN</string>
+    <string name="neutral">Neutral</string>
+    <string name="sig_striking_advantage">Bedeutendes Schläge Advantage:</string>
+    <string name="sig_bjj_advantage">Bedeutendes Jiu-Jitsu Advantage:</string>
+    <string name="sig_wrestling_advantage">Bedeutendes Ringen Advantage:</string>
+    <string name="slight_striking_advantage">Schwaches Schläge Advantage:</string>
+    <string name="slight_bjj_advantage">Schwaches Jiu-Jitsu Advantage:</string>
+    <string name="slight_wrestling_advantage">Schwaches Ringen Advantage:</string>
+
+    <string name="winner_msg">DER GEWINNER IST</string>
+    <string name="draw_msg">DIESER KAMPF IST</string>
+    <string name="draw">ZU KNAPP, UM EINDEUTIG ZU SEIN</string>
+    <string name="finish_button">DAS ENDE</string>
+
+
+</resources>

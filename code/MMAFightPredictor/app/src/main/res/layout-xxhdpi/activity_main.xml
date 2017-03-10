@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="90dp"
+            android:id="@+id/titlepic"
+            android:contentDescription="@string/app_name"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimary"
+            android:src="@drawable/title"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/makealgolay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titlepic"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="25dp">
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/create_algo"
+                android:onClick="onClickCreateAlgorithm"
+                android:contentDescription="@string/calc"
+                android:background="@drawable/calculatelogo"
+                android:clickable="true"
+                android:adjustViewBounds="false"
+                android:layout_below="@+id/titlepic"
+                android:layout_marginTop="30dp" />
+
+            <ImageButton
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:id="@+id/calculate"
+                android:contentDescription="@string/create_algo"
+                android:onClick="onClickUseOurAlgorithm"
+                android:background="@drawable/makealgo"
+                android:clickable="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/makealgolay">
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/create_algo"
+                android:textSize="30sp"
+                android:textColor="@color/Grey"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:clickable="true"
+                android:text="@string/calc"
+                android:textSize="30sp"
+                android:textColor="@color/Grey"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"/>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--/>
+
+
+    -->
+
+    <!---->
+
+    <!--
+
+
+    -->
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgscreen2"
+    android:layout_gravity="center"
+    android:id="@+id/welcome2"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/welc3title"
+        android:layout_gravity="top|center"
+        android:text="@string/calc"
+        android:textSize="50sp"
+        android:textColor="@color/Grey"
+        android:layout_marginTop="160sp"/>
+
+    <ImageView
+        android:layout_width="350sp"
+        android:layout_height="350sp"
+        android:id="@+id/welc2img"
+        android:contentDescription="@string/calc"
+        android:src="@drawable/calculatelogo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="250sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginEnd="100sp"
+        android:layout_marginRight="100sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/welc3txt"
+        android:layout_gravity="center"
+        android:layout_marginTop="200sp"
+        android:text="@string/welcome_screen_three_msg"
+        android:textSize="40sp"
+        android:gravity="center"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_button"
+        android:id="@+id/welc2back"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|start"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_button"
+        android:id="@+id/welc2next"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="bottom|end"
+        android:background="@color/colorAccent"
+        android:layout_marginBottom="10sp"/>
+
+    <ImageView
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:src="@drawable/welc3dots"
+        android:id="@+id/welc3dots"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="25sp"
+        />
+
+</FrameLayout>
