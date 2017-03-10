@@ -1,1 +1,0 @@
-[Link to Blogs](https://gitlab.computing.dcu.ie/nearyc2/2017-CA326-cneary-mmafightpredictor/wikis/pages)
